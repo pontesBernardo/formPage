@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Form Page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+        <div class="navigation-logo">Form<span>Page</span></div>
+        <ul class="navigation-items">
+          <li class="navigation-item"><a href="#footer__section">Contact</a></li>
+          <li class="navigation-item"><a href="#linkgit" target="_blank" rel="external">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box">
+                <h1 class="box__title">Informações do documento</h1>
+                <hr>
+                <div class="input__group">
+                    <form id="form" class="form">
+                        <input type="text" class="input__name" id="name" required>
+                        <label class="placeholder__name">Nome do documento</label>
+
+                        <input type="text" class="input__description" id="desc" required>
+                        <label class="placeholder__description">Descrição do documento</label>
+
+                        <input type="date" class="input__date" id="date" required>
+                        <input type="time" class="input__time" id="time" required>
+
+                        <input type="email" class="input__email" id="email" required>
+                        <label class="placeholder__email">Digite o email do remetente</label>
+
+                        <input type="file" id="uploadBtn">
+                        
+                        <input type="url" class="input__url" id="url">
+                        <label class="placeholder__url">Insira um link (Opcional)</label>
+
+                        <button type="submit" class="button__submit" id="submit">Enviar documento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
